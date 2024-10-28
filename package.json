@@ -1,0 +1,36 @@
+{
+  "name": "jwl-service",
+  "version": "1.0.0",
+  "description": "Backend cho dự án JWL (Journey With Love)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "nodemon dist/app.js",
+    "serve": "npm run build && npm start",
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrTruong/JWL-Service.git"
+  },
+  "keywords": [
+    "Vu250599@"
+  ],
+  "author": "Dr.Truong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DrTruong/JWL-Service/issues"
+  },
+  "homepage": "https://github.com/DrTruong/JWL-Service#readme",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.1",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
