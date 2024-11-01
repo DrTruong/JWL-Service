@@ -10,8 +10,6 @@ export interface IUser extends Document {
   password: string;
   avatarUrl?: string;
   partnerId?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
 }
 
 const UserSchema: Schema = new Schema(

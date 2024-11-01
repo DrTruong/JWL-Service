@@ -4,6 +4,7 @@ import connectToDatabase from "./config/database";
 import dotenv from "dotenv";
 import authRouter from "./routes/authRoutes";
 import userRouter from "./routes/userRoutes";
+import uploadRouter from "./routes/uploadRoutes";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ const port = process.env.PORT;
 app.use(body_parser.json());
 app.use("/api", authRouter);
 app.use("/api", userRouter);
+app.use("/api", uploadRouter);
 
 connectToDatabase(() => {
   app.listen(port, () => {
